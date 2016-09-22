@@ -34,32 +34,33 @@ Deux blocs consécutifs sont utilisé pour produire une série de bits(0 ou 1)
  	Exemple
 
 
-Prenons un exemple avec un seul caractere : la lettre capitale "C". "C" en binaire est égale  à 1000011, donc avec la technique de tonton Norris on a:
-
-
-0 0 (la première série représente "1")
-00 0000 (la seconde série représente "0000")
-0 00 (la troisième série représente "11")
-donc C est encodé: 0 0 00 0000 0 00
-
-Second exemple, on encode CC (en binaire 10000111000011):
-
-0 0 <==> 1
-00 0000 <==> 0000
-00 0000("0000")
-0 00 ("11")
-donc CC est encodé: 0 0 00 0000 0 000 00 0000 0 00
+> Prenons un exemple avec un seul caractere : la lettre capitale "C". "C" en binaire est égale  à 1000011, donc avec la technique de tonton Norris on a:
+>
+>
+> 0 0 (la première série représente "1")
+> 00 0000 (la seconde série représente "0000")
+> 0 00 (la troisième série représente "11")
+> donc C est encodé: 0 0 00 0000 0 00
+> 
+> Second exemple, on encode CC (en binaire 10000111000011):
+> 
+> * 0 0 <==> 1
+> * 00 0000 <==> 0000
+> * 00 0000("0000")
+> * 0 00 ("11")
+> * donc CC est encodé: 0 0 00 0000 0 000 00 0000 0 00
 
 	### Entrée
 #### Entrée
-Ligne 1: le Message en ASCII
+*Ligne 1: le Message en ASCII*
 #### Sortie
-Le message encodé
+*Le message encodé*
 #### Contraintes
-0 < N < 100
-#### Exemple
-Entree
-C
+*0 < N < 100*
+
+### Exemple
+#### Entree
+*C*
 #### Sortie
-0 0 00 0000 0 00
+*0 0 00 0000 0 00*
 
